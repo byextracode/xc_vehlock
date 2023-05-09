@@ -30,6 +30,9 @@ client_scripts {
 
 dependencies {
 	'es_extended',
+	'oxmysql',
+	'ox_lib',
+	'ox_target'
 }
 
 ui_page "html/main.html"
