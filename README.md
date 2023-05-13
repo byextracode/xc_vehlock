@@ -1,7 +1,7 @@
 # xc_vehlock
 
 ## Description
-This resource handles vehicle lock with sound effect.
+Modified version of original esx_vehiclelock. Handles vehicle lock with sound effect.
 
 ## Feature
 - Lock owned vehicles or vehicles which key being held from other player.
@@ -18,7 +18,10 @@ Coming soon
 - ESX
 - [oxmysql](https://github.com/overextended/oxmysql)
 - [ox_lib](https://github.com/overextended/ox_lib)
-- [ox_target](https://github.com/overextended/ox_target)
+- [ox_target](https://github.com/overextended/ox_target) (optional)
+
+## esx_vehiclelock
+- Credit: [Original Repository](https://github.com/esx-community/esx_vehiclelock)
 
 # Legal
 
