@@ -49,7 +49,7 @@ lib.callback.register("xc_vehlock:giveKey", function(source, data)
 	end
 	local result = MySQL.prepare.await('SELECT `plate` FROM `owned_vehicles` WHERE `owner` = ? AND `plate` = ?', {xPlayer.identifier, plate})
 	if not result then
-		return "You don't own this!"
+		return labelText("not_owned")
 	end
 	if not saved_vehicle[targetId] then
 		saved_vehicle[targetId] = {}
