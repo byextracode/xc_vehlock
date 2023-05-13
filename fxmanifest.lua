@@ -4,7 +4,7 @@ game 'gta5'
 
 name 'ex_vehlock'
 description 'Modified ESX Vehicle Lock'
-version '1.0.0'
+version '2.0.0'
 author 'wibowo#7184'
 
 files {
@@ -14,9 +14,9 @@ files {
 
 shared_scripts {
 	"@es_extended/imports.lua",
-	"@es_extended/locale.lua",
 	"@ox_lib/init.lua",
-	'config.lua',
+	"config.lua",
+	"shared.lua",
 }
 
 server_script {
@@ -32,7 +32,7 @@ dependencies {
 	'es_extended',
 	'oxmysql',
 	'ox_lib',
-	'ox_target'
+	-- 'ox_target'-- optional
 }
 
 ui_page "html/main.html"
