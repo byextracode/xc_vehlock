@@ -143,7 +143,7 @@ local function lockVehicle()
 end
 
 RegisterCommand('+'..Config.commandlock, function()
-	lockVehicle()	
+	lockVehicle()
 end, false)
 
 RegisterCommand('-'..Config.commandlock, function()
