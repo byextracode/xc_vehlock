@@ -1,27 +1,5 @@
 local owned_vehicles = {}
 
-if Config.target then
-	local options = {
-		{
-			name = 'vehlock:give',
-			icon = 'fa-solid fa-key',
-			label = labelText("givekey_label"),
-			canInteract = function(entity, distance, coords, name, bone)
-				return not LocalPlayer.state.isDead
-			end,
-			onSelect = function(data)
-				local ped = data.entity
-				local pedIndex = NetworkGetPlayerIndexFromPed(ped)
-				local targetId = GetPlayerServerId(pedIndex)
-				giveKey(targetId)
-			end,
-			distance = 2.0
-		},
-	}
-
-	exports["ox_target"]:addGlobalPlayer(options)
-end
-
 local function giveKey(targetId)
 	local input = lib.inputDialog(labelText("input_title"), {
 		{ type = "input", label = labelText("input_label"), placeholder = labelText("input_placeholder") }
@@ -206,3 +184,25 @@ CreateThread(function()
 	end
 	TriggerEvent("xc_vehlock:update")
 end)
+
+if Config.target then
+	local options = {
+		{
+			name = 'vehlock:give',
+			icon = 'fa-solid fa-key',
+			label = labelText("givekey_label"),
+			canInteract = function(entity, distance, coords, name, bone)
+				return not LocalPlayer.state.isDead
+			end,
+			onSelect = function(data)
+				local ped = data.entity
+				local pedIndex = NetworkGetPlayerIndexFromPed(ped)
+				local targetId = GetPlayerServerId(pedIndex)
+				giveKey(targetId)
+			end,
+			distance = 2.0
+		},
+	}
+
+	exports["ox_target"]:addGlobalPlayer(options)
+end

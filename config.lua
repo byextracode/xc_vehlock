@@ -6,7 +6,7 @@ Config.commandlock = 'vehlock'
 Config.keybindlabel = '(Control) Vehicle Lock'
 Config.keybind = ''
 
-Config.target = false
+Config.target = true
 
 Config.translation = {
     ["en"] = {
