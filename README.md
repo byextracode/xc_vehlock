@@ -9,9 +9,12 @@ Modified version of original esx_vehiclelock. Handles vehicle lock with sound ef
 - Vehicle lock sound effect.
 
 ## Preview
-- [Preview 1](https://streamable.com/oh6cpa)
-- [Preview 2](https://i.imgur.com/R8ULbes.png)
-- [Preview 3](https://i.imgur.com/rtxIF46.png)
+- Preview 1
+[![Preview 1](https://i.imgur.com/VhuTyQu.png)](https://streamable.com/oh6cpa)
+- Preview 2
+![Preview 2](https://i.imgur.com/R8ULbes.png)
+- Preview 3
+![Preview 3](https://i.imgur.com/rtxIF46.png)
 
 ## Framework
 - ESX
