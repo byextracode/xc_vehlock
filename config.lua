@@ -1,5 +1,7 @@
 Config = {}
 
+Config.versionCheck = true -- check for updates
+
 Config.Locale = 'en'
 Config.commandgivekey = 'givekey'
 Config.commandlock = 'vehlock'
